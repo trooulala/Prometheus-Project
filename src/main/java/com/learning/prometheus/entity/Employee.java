@@ -17,7 +17,12 @@ public class Employee {
     @Id
     private String id;
 
+    @Column(unique = true)
+    private String workEmail;
+
     private String name;
+
+    private String password;
 
     private LocalDate birthDate;
 
